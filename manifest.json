@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "Reaction Saver",
+	"description": "A Chrome extension for saving reaction images and GIFs.",
+	"version": "1.0",
+
+	"permissions": [
+		"contextMenus"
+	],
+
+	"icons": {
+		"16": "icon-16.png"
+	}
+}
