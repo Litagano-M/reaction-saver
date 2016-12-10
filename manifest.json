@@ -5,6 +5,11 @@
 	"description": "A Chrome extension for saving reaction images and GIFs.",
 	"version": "1.0",
 
+	"background": {
+		"scripts": ["addImage.js"],
+		"persistent": false
+	},
+
 	"permissions": [
 		"contextMenus"
 	],
