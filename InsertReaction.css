@@ -1,11 +1,36 @@
-#media-collection .media-container {
+.media-container {
 	width: 100px;
+	height: 100px;
 	margin: 5px;
-	display: inline-block;
+	position: relative;
+	display: block;
+	float: left;
 	cursor: pointer;
 }
 
-#media-collection .media-container img {
-	width: inherit;
+.remove-button {
+	width: 20px;
+	height: 20px;
+	visibility: hidden;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	opacity: 0.5;
+	background-color: lightgray;
+	background-image: url(remove.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+}
+
+.media-container:hover .remove-button {
+	visibility: visible;
+}
+
+.media-container img {
+	max-width: 100px;
+	max-height: 100px;
+	display: block;
+	margin: auto;
 	vertical-align: middle;
 }
