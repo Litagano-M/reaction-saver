@@ -83,7 +83,13 @@ function populateList() {
 
 			$container.append($removeButton); // Append the remove button to the container
 			$container.append($image); // Append the image to the container
-			$("#media-collection").append($container); // Append the container to the div that holds all the saved bookmarks
+
+            // If the bookmark is a favorite...
+            if (bookmark.favorite) {
+                $("#favorites-collection").append($container); // ...append the container to the div that holds all the favorites
+            } else {
+                $("#media-collection").append($container); // ...else append the container to the div that holds all the saved bookmarks
+            }
 		});
 	});
 }

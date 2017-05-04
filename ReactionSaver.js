@@ -53,7 +53,7 @@ function addBookmark(info) {
 			"favorite": false
 		});
 
-		chrome.storage.sync.set( {"bookmarks": bookmarks} ); // After we're done, set the bookmarks in Chrome's synced storage to the one stored in the bookmarks variable creeted above.
+		chrome.storage.sync.set( {"bookmarks": bookmarks} ); // After we're done, set the bookmarks in Chrome's synced storage to the one stored in the bookmarks variable created above.
 	});
 }
 
