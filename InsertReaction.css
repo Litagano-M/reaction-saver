@@ -17,29 +17,42 @@
 	cursor: pointer;
 }
 
-.remove-button {
+.button {
 	width: 20px;
 	height: 20px;
 	visibility: hidden;
 	position: absolute;
-	right: 2px;
-	top: 2px;
 	opacity: 0.5;
 	background-color: lightgray;
-	background-image: url(remove.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 5px;
 }
 
-.media-container:hover .remove-button {
+.remove {
+	background-image: url(remove.png);
+    right: 2px;
+	top: 2px;
+}
+
+.favorite {
+    background-image: url(favorite.png);
+    left: 2px;
+    top: 2px;
+}
+
+.favorited {
+    background-color: yellow;
+}
+
+.media-container:hover .button {
 	visibility: visible;
 }
 
 .media-container img {
+    margin: auto;
 	max-width: 100px;
 	max-height: 100px;
-	display: inline-block;
-	margin: auto;
-	vertical-align: middle;
+	display: block;
+    text-align: center;
 }
