@@ -88,7 +88,7 @@ function populateList() {
             if (bookmark.favorite) {
                 $("#favorites-collection").append($container); // ...append the container to the div that holds all the favorites
             } else {
-                $("#media-collection").append($container); // ...else append the container to the div that holds all the saved bookmarks
+                $("#regular-collection").append($container); // ...else append the container to the div that holds all the regular saved bookmarks
             }
 		});
 	});
